@@ -195,6 +195,20 @@
   transform: scale(1.05);
   }
 
+  .search-btn {
+    background-color: none;
+    border: none;
+    cursor: pointer;
+    color: var(--golden-color);
+    margin-left: 1rem;
+    transition: transform 0.2 ease, color 0.3s ease;
+  }
+
+  .search-btn:hover {
+    transform: scale(1.2);
+    color: var(--white-color);
+  }
+
   .nav-toogle-btn {
     display: none;
   }
