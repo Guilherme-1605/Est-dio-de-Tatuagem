@@ -1,156 +1,176 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!--descrição que aparece no antes de entrar no site-->
-    <meta name="description" content="Estúdio de tatuagem especializado em designs personalizados e cuidados com a pele."/>
+    <meta
+      name="description"
+      content="Estúdio de tatuagem especializado em designs personalizados e cuidados com a pele."
+    />
 
     <!-- palavras chaves que ajudam a encontrar o site-->
-    <meta name="title" content="Faça suas tatuagens com profissionais e estilosas!"/>
+    <meta
+      name="title"
+      content="Faça suas tatuagens com profissionais e estilosas!"
+    />
 
     <title>Estudio de tatuagem</title>
 
-      <!--favicon-->
-      <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+    <!--favicon-->
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
 
     <!-- CSS -->
-     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css" />
 
     <!-- Fontes do Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
-</head>
-<body>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <!--header-->
     <header class="header active">
       <div class="container">
         <a href="#" class="logo">
-          <img src="assets/img/logotatu.png" alt="logo tatto">
+          <img src="assets/img/logotatu.png" alt="logo tatto" />
         </a>
 
         <!--Nav menu-->
-    <nav class="navbar active">
-      <ul class="navbar-list">
-       <li class="navbar-item">
-        <a href="#" class="navbar-link">Home</a>
-        </li>
-        
-    <li class="navbar-item">
-      <a href="#estudio" class="navbar-link">O estúdio</a>
-  </li>
+        <nav class="navbar active">
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <a href="#" class="navbar-link">Home</a>
+            </li>
 
-        <!--dropdown-->
-        <li class="dropdown-item">
-          <div class="navbar-link dropdown-toggle" data-dropdown-toggle>
-            Serviços 
-            <ion-icon name="chevron-down-outline"></ion-icon>
+            <li class="navbar-item">
+              <a href="#estudio" class="navbar-link">O estúdio</a>
+            </li>
+
+            <!--dropdown-->
+            <li class="dropdown-item">
+              <div class="navbar-link dropdown-toggle" data-dropdown-toggle>
+                Serviços
+                <ion-icon name="chevron-down-outline"></ion-icon>
+              </div>
+
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="#" class="dropdown-link"> Tatuagem </a>
+                </li>
+
+                <li>
+                  <a href="#" class="dropdown-link"> Fine Line </a>
+                </li>
+
+                <li>
+                  <a href="#" class="dropdown-link"> cobertura </a>
+                </li>
+
+                <li>
+                  <a href="#" class="dropdown-link"> Laser </a>
+                </li>
+
+                <li>
+                  <a href="#" class="dropdown-link"> Piercing </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+
+        <li class="navbar-item">
+          <a href="#" class="navbar-link"> contato </a>
+        </li>
+
+        <a href="#" class="btn" id="openLogin">Login</a>
+
+        <button class="search-btn" id="searchToggle" aria-label="Buscar">
+          <ion-icon name="search-outline"></ion-icon>
+        </button>
+
+        <!-- Overlay da busca -->
+        <div class="search-overlay" id="searchOverlay">
+          <button class="close-btn" id="closeSearch" aria-label="Fechar busca">
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+          <div class="search-container">
+            <input
+              type="text"
+              placeholder="O que você está procurando?"
+              class="search-input"
+              autofocus
+            />
           </div>
+        </div>
 
-          <ul class="dropdown-menu">
-            <li>
-              <a href="#" class="dropdown-link">
-                Tatuagem
-              </a>
-            </li>
-          
-            <li>
-              <a href="#" class="dropdown-link">
-                Fine Line
-              </a>
-            </li>
-          
-            <li>
-              <a href="#" class="dropdown-link">
-                cobertura
-              </a>
-            </li>
-          
-            <li>
-              <a href="#" class="dropdown-link">
-                Laser
-              </a>
-            </li>
-          
-            <li>
-              <a href="#" class="dropdown-link">
-                Piercing
-              </a>
-            </li>
-        </li>
-
-        
-    </ul>
-  </nav>
-
-  <li class="navbar-item">
-    <a href="#" class="navbar-link">
-      contato
-    </a>
-  </li>
-
-  <a href="#" class="btn">Login</a>
-
-  <button class="search-btn" id="searchToggle" aria-label="Buscar">
-    <ion-icon name="search-outline"></ion-icon>
-    </button>
-
-  <!-- Overlay da busca -->
-  <div class="search-overlay" id="searchOverlay">
-    <button class="close-btn" id="closeSearch" aria-label="Fechar busca">
-      <ion-icon name="close-outline"></ion-icon>
-    </button>
-    <div class="search-container">
-      <input
-        type="text"
-        placeholder="O que você está procurando?"
-        class="search-input"
-        autofocus
-      />
-    </div>
-  </div>
-
-  <button class="nav-toggle-btn" aria-label="menu mobile">
-    <ion-icon name="menu-outline"></ion-icon>
-    </button>
+        <button class="nav-toggle-btn" aria-label="menu mobile">
+          <ion-icon name="menu-outline"></ion-icon>
+        </button>
       </div>
     </header>
 
     <!--BANNER-->
     <section class="banner">
       <video autoplay muted loop>
-        <source src="assets/videos/5196641-hd_1280_720_25fps.mp4">
+        <source
+          src="assets/videos/5196641-hd_1280_720_25fps.mp4"
+          type="video/mp4"
+        />
+      </video>
+    </section>
+
+    <!--SOBRE-->
+
+    <section class="section about" aria-label="sobre" id="sobre">
+      <div class="container-sobre">
+        <figure class="about-banner">
+          <img src="assets/img/arme-com-tatuagem-perto-esboco.jpg" alt="sobre" class="w-100 efeito" />
+        </figure>
+        <div class="about-content">
+          <p class="section-subtitle">Sobre a Arte na Pele</p>
+          <h2 class="h2 text-center">A pele é sua. A atitude também!</h2>
+          <p class="section-text-1">
+            Um estúdio de tatuagem moderno e acolhedor, especializado em arte
+            personalizada na pele. Com profissionais experientes e foco na
+            higiene, criatividade e atendimento individualizado, o espaço
+            oferece desde traços finos e delicados até trabalhos autorais
+            marcantes.
+          </p>
+          <a href="#" class="btn">Saiba mais</a>
+        </div>
+      </div>
     </section>
 
     <!--GALERIA DE IMAGENS-->
 
     <section class="section gallery" id="Estudio">
-    <div class="container-galeria">
-    <p class="section-subtitle text-center">Nossos trabalho</p>
-    <h2 class="h2 text-center">Confira o trabalho dos nossos artistas</h2>
-        </div>
+      <div class="container-galeria">
+        <p class="section-subtitle text-center">Nossos trabalho</p>
+        <h2 class="h2 text-center">Confira o trabalho dos nossos artistas</h2>
+      </div>
 
-        <div class="galeria">
-          <img src="assets/img/arme-com-tatuagem-perto-esboco.jpg" alt="foto1"/>
-          <img src="assets/img/arme-com-tatuagem-perto-esboco.jpg" alt="foto2"/>
-          <img src="assets/img/arme-com-tatuagem-perto-esboco.jpg" alt="foto3"/>
-          <img src="assets/img/arme-com-tatuagem-perto-esboco.jpg" alt="foto4"/>
-        </div>
+      <div class="galeria">
+        <img src="assets/img/arme-com-tatuagem-perto-esboco.jpg" alt="foto1" />
+        <img src="assets/img/arme-com-tatuagem-perto-esboco.jpg" alt="foto2" />
+        <img src="assets/img/arme-com-tatuagem-perto-esboco.jpg" alt="foto3" />
+        <img src="assets/img/arme-com-tatuagem-perto-esboco.jpg" alt="foto4" />
+      </div>
 
-        <div class="botao-ver-mais">
-          <a href="#" class="btn-ver-mais" title="Ver galeria">
-            <ion-icon name="arrow-forward-outline"></ion-icon>
-          </a>
-        </div>
+      <div class="botao-ver-mais">
+        <a href="#" class="btn-ver-mais" title="Ver galeria">
+          <ion-icon name="arrow-forward-outline"></ion-icon>
+        </a>
+      </div>
 
-        <!--LIGHTBOX-->
-        <div class="lightbox" id="lightbox">
-          <img src="" alt="Imagem ampliada" id="lightbox-img"/>
-          </div>
+      <!--LIGHTBOX-->
+      <div class="lightbox" id="lightbox">
+        <img src="" alt="Imagem ampliada" id="lightbox-img" />
+      </div>
     </section>
 
     <!--SERVIÇOS-->
@@ -160,154 +180,216 @@
         <h2 class="h2 section-title text-center">O que Oferecemos</h2>
 
         <ul class="service-list">
-
           <!--CARD 1-->
           <li>
             <div class="service-card">
               <div class="card-icon">
-                <img src="assets/img/tatoo.png" alt="tatuagem" class="w-100" width="50" height="50"/>
+                <img
+                  src="assets/img/tatoo.png"
+                  alt="tatuagem"
+                  class="w-100"
+                  width="50"
+                  height="50"
+                />
               </div>
 
-            <div>
-              <h3 class="h3 card-title">tatuagem</h3>
-              <p class="card-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia beatae fugiat, ab cum quibusdam maiores eveniet nostrum dolores praesentium at unde saepe suscipit temporibus nesciunt tenetur porro! Deleniti, minima! Eveniet?
-                              </p>
-                         </div> 
-                    </div>
-                 </li>
+              <div>
+                <h3 class="h3 card-title">tatuagem</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia
+                  beatae fugiat, ab cum quibusdam maiores eveniet nostrum
+                  dolores praesentium at unde saepe suscipit temporibus nesciunt
+                  tenetur porro! Deleniti, minima! Eveniet?
+                </p>
+              </div>
+            </div>
+          </li>
 
           <!--CARD 2-->
           <li>
             <div class="service-card">
               <div class="card-icon">
-                <img src="assets/img/tatoo.png" alt="tatuagem" class="w-100" width="50" height="50"/>
+                <img
+                  src="assets/img/tatoo.png"
+                  alt="tatuagem"
+                  class="w-100"
+                  width="50"
+                  height="50"
+                />
               </div>
 
-            <div>
-              <h3 class="h3 card-title">tatuagem</h3>
-              <p class="card-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia beatae fugiat, ab cum quibusdam maiores eveniet nostrum dolores praesentium at unde saepe suscipit temporibus nesciunt tenetur porro! Deleniti, minima! Eveniet?
-                              </p>
-                         </div> 
-                    </div>
-                 </li>
+              <div>
+                <h3 class="h3 card-title">tatuagem</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia
+                  beatae fugiat, ab cum quibusdam maiores eveniet nostrum
+                  dolores praesentium at unde saepe suscipit temporibus nesciunt
+                  tenetur porro! Deleniti, minima! Eveniet?
+                </p>
+              </div>
+            </div>
+          </li>
 
           <!--CARD 3-->
           <li>
             <div class="service-card">
               <div class="card-icon">
-                <img src="assets/img/tatoo.png" alt="tatuagem" class="w-100" width="50" height="50"/>
+                <img
+                  src="assets/img/tatoo.png"
+                  alt="tatuagem"
+                  class="w-100"
+                  width="50"
+                  height="50"
+                />
               </div>
 
-            <div>
-              <h3 class="h3 card-title">tatuagem</h3>
-              <p class="card-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia beatae fugiat, ab cum quibusdam maiores eveniet nostrum dolores praesentium at unde saepe suscipit temporibus nesciunt tenetur porro! Deleniti, minima! Eveniet?
-                              </p>
-                         </div> 
-                    </div>
-                 </li>
+              <div>
+                <h3 class="h3 card-title">tatuagem</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia
+                  beatae fugiat, ab cum quibusdam maiores eveniet nostrum
+                  dolores praesentium at unde saepe suscipit temporibus nesciunt
+                  tenetur porro! Deleniti, minima! Eveniet?
+                </p>
+              </div>
+            </div>
+          </li>
 
           <!--img centro-->
 
           <li class="service-banner">
             <figure>
-                <img src="assets/img/tatoo.png" alt="" class="w-100" width="50" height="50"/>
-              </figure>
+              <img
+                src="assets/img/tatoo.png"
+                alt=""
+                class="w-100"
+                width="50"
+                height="50"
+              />
+            </figure>
           </li>
 
           <!--CARD 4-->
           <li>
             <div class="service-card">
               <div class="card-icon">
-               <img src="assets/img/tatoo.png" alt="laser" class="w-100" width="50" height="50"/>
+                <img
+                  src="assets/img/tatoo.png"
+                  alt="laser"
+                  class="w-100"
+                  width="50"
+                  height="50"
+                />
               </div>
 
-            <div>
-              <h3 class="h3 card-title">Laser</h3>
-              <p class="card-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia beatae fugiat, ab cum quibusdam maiores eveniet nostrum dolores praesentium at unde saepe suscipit temporibus nesciunt tenetur porro! Deleniti, minima! Eveniet?
-                              </p>
-                         </div> 
-                    </div>
-                 </li>
+              <div>
+                <h3 class="h3 card-title">Laser</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia
+                  beatae fugiat, ab cum quibusdam maiores eveniet nostrum
+                  dolores praesentium at unde saepe suscipit temporibus nesciunt
+                  tenetur porro! Deleniti, minima! Eveniet?
+                </p>
+              </div>
+            </div>
+          </li>
 
-                 <!--CARD 5-->
+          <!--CARD 5-->
           <li>
             <div class="service-card">
               <div class="card-icon">
-                <img src="assets/img/tatoo.png" alt="piercing" class="w-100" width="50" height="50"/>
+                <img
+                  src="assets/img/tatoo.png"
+                  alt="piercing"
+                  class="w-100"
+                  width="50"
+                  height="50"
+                />
               </div>
 
-            <div>
-              <h3 class="h3 card-title">piercing</h3>
-              <p class="card-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia beatae fugiat, ab cum quibusdam maiores eveniet nostrum dolores praesentium at unde saepe suscipit temporibus nesciunt tenetur porro! Deleniti, minima! Eveniet?
-                              </p>
-                         </div> 
-                    </div>
-                 </li>
-                 
-                 <!--CARD 6-->
+              <div>
+                <h3 class="h3 card-title">piercing</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia
+                  beatae fugiat, ab cum quibusdam maiores eveniet nostrum
+                  dolores praesentium at unde saepe suscipit temporibus nesciunt
+                  tenetur porro! Deleniti, minima! Eveniet?
+                </p>
+              </div>
+            </div>
+          </li>
+
+          <!--CARD 6-->
           <li>
             <div class="service-card">
               <div class="card-icon">
-                <img src="assets/img/tatoo.png" alt="estética" class="w-100" width="50" height="50"/>
+                <img
+                  src="assets/img/tatoo.png"
+                  alt="estética"
+                  class="w-100"
+                  width="50"
+                  height="50"
+                />
               </div>
 
-            <div>
-              <h3 class="h3 card-title">tatuagem estética</h3>
-              <p class="card-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia beatae fugiat, ab cum quibusdam maiores eveniet nostrum dolores praesentium at unde saepe suscipit temporibus nesciunt tenetur porro! Deleniti, minima! Eveniet?
-                              </p>
-                         </div> 
-                    </div>
-                 </li>
-
-              </ul>
-          </div>
+              <div>
+                <h3 class="h3 card-title">tatuagem estética</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia
+                  beatae fugiat, ab cum quibusdam maiores eveniet nostrum
+                  dolores praesentium at unde saepe suscipit temporibus nesciunt
+                  tenetur porro! Deleniti, minima! Eveniet?
+                </p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
     </section>
 
-  <!--LOGIN-->
-            <section class="container-login">
-                <div class="wrapper">
-                    <div class="form-box login">
-                        <h2>Login</h2>
+    <!--LOGIN-->
+    <section class="container-login">
+      <div class="wrapper">
+        <div class="form-box login">
+          <h2>Login</h2>
 
-                        <form action="#">
-                            <div class="input-box">
-                                <input type="text" required/>
-                                <label>Usuário</label>
-                                <ion-icon name="person"></ion-icon>
-                            </div>
+          <form action="#">
+            <div class="input-box">
+              <input type="text" required />
+              <label>Usuário</label>
+              <ion-icon name="person"></ion-icon>
+            </div>
 
-                            <div class="input-box">
-                                <input type="password" required/>
-                                <label>Senha</label>
-                               <ion-icon name="person"></ion-icon>
-                            </div>
+            <div class="input-box">
+              <input type="password" required />
+              <label>Senha</label>
+              <ion-icon name="person"></ion-icon>
+            </div>
 
-                            <button type="submit" class="btn btn-login">Entrar</button>
+            <button type="submit" class="btn btn-login">Entrar</button>
 
-                            <div class="logreg-link">
-                              <p>
-                                Não possui uma conta?
-                                <a href="#" class="register-link">Clique aqui</a>
-                              </p>
-                            </div>
-
-                        </form>
-                    </div>
-                </div>
-            </section>
+            <div class="logreg-link">
+              <p>
+                Não possui uma conta?
+                <a href="#" class="register-link">Clique aqui</a>
+              </p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
 
     <!--script-->
     <script src="assets/js/script.js"></script>
 
     <!--ionicons-->
-  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-
-</body>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>
